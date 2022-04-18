@@ -1,7 +1,6 @@
-import {Component} from 'react'
+import React, {Component} from 'react'
 import Products from './components/Products';
-
-class App extends Component() {
+class App extends Component {
   state = {
     products: [
       {name: 'Tomate', price: 1500, img:'/products/tomate.jpg'},
@@ -14,7 +13,7 @@ class App extends Component() {
     return (
       <div>
         <Products
-          agregarAlCarro= {()=> console.log('No hace nada')}
+          agregarAlCarro= {() => console.log('No hace nada')}
           products= {this.state.products}
         />
       </div>

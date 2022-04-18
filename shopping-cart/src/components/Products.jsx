@@ -1,5 +1,6 @@
-import { Component } from "react";
+import React, {Component} from "react";
 import Product from './Product'
+
 const styles = {
     products : {
         display: 'flex',
@@ -12,7 +13,8 @@ class Products extends Component {
     render(){
         const {products, agregarAlCarro} = this.props;
     return(
-        <div>
+        <div
+        style={styles.products}>
             {products.map(product => 
                 <Product
                     agregarAlCarro = {agregarAlCarro}
