@@ -9,7 +9,6 @@ const styles = {
         borderRadius: '5px',
         cursor: 'pointer',
         fontSize: '15px',
-        fontWeight: 'bold',
     }
 }
 class Button extends Component {
